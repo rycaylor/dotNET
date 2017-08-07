@@ -1,0 +1,8 @@
+/Users/baileycook/Desktop/Coding/DojoAssignments/netCore/time_display/bin/Debug/netcoreapp1.1/time_display.deps.json
+/Users/baileycook/Desktop/Coding/DojoAssignments/netCore/time_display/bin/Debug/netcoreapp1.1/time_display.runtimeconfig.json
+/Users/baileycook/Desktop/Coding/DojoAssignments/netCore/time_display/bin/Debug/netcoreapp1.1/time_display.runtimeconfig.dev.json
+/Users/baileycook/Desktop/Coding/DojoAssignments/netCore/time_display/bin/Debug/netcoreapp1.1/time_display.dll
+/Users/baileycook/Desktop/Coding/DojoAssignments/netCore/time_display/bin/Debug/netcoreapp1.1/time_display.pdb
+/Users/baileycook/Desktop/Coding/DojoAssignments/netCore/time_display/obj/Debug/netcoreapp1.1/time_display.AssemblyInfo.cs
+/Users/baileycook/Desktop/Coding/DojoAssignments/netCore/time_display/obj/Debug/netcoreapp1.1/time_display.dll
+/Users/baileycook/Desktop/Coding/DojoAssignments/netCore/time_display/obj/Debug/netcoreapp1.1/time_display.pdb
