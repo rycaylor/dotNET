@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+}
+
+.holder{
+    width: 500px;
+    height: 400px;
+    background-image: url(../images/grass2.png);
+    display: inline-block;
+    margin-left: 450px;
+}
+
+.inner{
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/pacman2.gif);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 175px;
+    margin-top: 100px;
+
+}
+
+.bar {
+    /* background: blue; */
+    display: inline-block;
+    margin-right: 50px;
+    /* margin-top: 20px; */
+    margin-left: 422px;
+}
+.bar input{
+    margin: 30px;
+    background: red;
+    color: white;
+    width: 75px;
+}
+
+.update
+{
+    width: 450px;
+    height: 450px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+    background-image: url(../images/ball.png);
+}
+
+.update h1{
+    color: white;
+    display: inline-block;
+    margin-left: 180px;
+    margin-top: 50px;
+}
+
+.update >p{
+    display: inline-block;
+    margin-left: 100px;
+    color: white;
+}

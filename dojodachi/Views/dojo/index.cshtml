@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+    <h1>PokeDachi!</h1>
+
+    <div class="holder">
+        <div class="inner">
+        </div>
+    </div>
+
+    <div class="update">
+        <h1>Update</h1>
+        <p>Fullness: @ViewBag.fullness</p>
+        <p>Happiness: @ViewBag.happy</p>
+        <p>Meals: @ViewBag.meals</p>
+        <p>Energy: @ViewBag.energy</p>
+    </div>
+
+    <div class="bar">
+        <form action="dachi" method="post">
+            <input type="submit" value="Feed" name="button">
+            <input type="submit" value="Play" name="button">
+            <input type="submit" value="Work" name="button">
+            <input type="submit" value="Sleep" name="button">
+        </form>
+    </div>
+
+
+
+</body>
+</html>
