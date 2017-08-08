@@ -22,6 +22,24 @@ namespace dojodachi.Controllers
             HttpContext.Session.SetObjectAsJson("dachi", meep);
             return View("index");
         }
+        [HttpGet]
+        [Route("dojodachi")]
+        public IActionResult page()
+        {
+            Dachi meep = HttpContext.Session.GetObjectFromJson<Dachi>("dachi");
+            int en = meep.energy;
+            int ful = meep.fullness;
+            int me = meep.meals;
+            int hap = meep.happy;
+            ViewBag.energy = en;
+            ViewBag.fullness = ful;
+            ViewBag.meals = me;
+            ViewBag.happy = hap;
+            HttpContext.Session.SetObjectAsJson("dachi", meep);
+            return View("index");
+            
+        }
+
 
         [HttpPost]
         [Route("dachi")]
@@ -33,16 +51,8 @@ namespace dojodachi.Controllers
                 meep.feed(meep);
                 List<string> check = meep.status(meep);
                 if(check.Contains("fine")){
-                    int en = meep.energy;
-                    int ful = meep.fullness;
-                    int me = meep.meals;
-                    int hap = meep.happy;
-                    ViewBag.energy = en;
-                    ViewBag.fullness = ful;
-                    ViewBag.meals = me;
-                    ViewBag.happy = hap;
                     HttpContext.Session.SetObjectAsJson("dachi", meep);
-                    return View("index");
+                    return RedirectToAction("page");
                 }
                 else if(check.Contains("win"))
                 {
@@ -58,16 +68,8 @@ namespace dojodachi.Controllers
                 meep.play(meep);
                 List<string> check = meep.status(meep);
                 if(check.Contains("fine")){
-                    int en = meep.energy;
-                    int ful = meep.fullness;
-                    int me = meep.meals;
-                    int hap = meep.happy;
-                    ViewBag.energy = en;
-                    ViewBag.fullness = ful;
-                    ViewBag.meals = me;
-                    ViewBag.happy = hap;
                     HttpContext.Session.SetObjectAsJson("dachi", meep);
-                    return View("index");
+                    return RedirectToAction("page");
                 }
                 else if(check.Contains("win"))
                 {
@@ -83,16 +85,8 @@ namespace dojodachi.Controllers
                 meep.work(meep);
                 List<string> check = meep.status(meep);
                 if(check.Contains("fine")){
-                    int en = meep.energy;
-                    int ful = meep.fullness;
-                    int me = meep.meals;
-                    int hap = meep.happy;
-                    ViewBag.energy = en;
-                    ViewBag.fullness = ful;
-                    ViewBag.meals = me;
-                    ViewBag.happy = hap;
                     HttpContext.Session.SetObjectAsJson("dachi", meep);
-                    return View("index");
+                    return RedirectToAction("page");
                 }
                 else if(check.Contains("win"))
                 {
@@ -108,16 +102,8 @@ namespace dojodachi.Controllers
                 meep.sleep(meep);
                 List<string> check = meep.status(meep);
                 if(check.Contains("fine")){
-                    int en = meep.energy;
-                    int ful = meep.fullness;
-                    int me = meep.meals;
-                    int hap = meep.happy;
-                    ViewBag.energy = en;
-                    ViewBag.fullness = ful;
-                    ViewBag.meals = me;
-                    ViewBag.happy = hap;
                     HttpContext.Session.SetObjectAsJson("dachi", meep);
-                    return View("index");
+                    return RedirectToAction("page");
                 }
                 else if(check.Contains("win"))
                 {
