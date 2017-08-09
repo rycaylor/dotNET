@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Enter Your Information</h1>
+    
+    <div>
+    @{
+        foreach(var error in ViewBag.errors)
+        {
+            //If there are any errors for a field...
+            if(@error.Errors.Count > 0)
+            {
+                // We show the first error for that field
+                <p>@error.Errors[0].ErrorMessage</p>
+            }
+        }
+    }
+    </div>
+
+
+    <form action="validate" method="post">
+        
+        <h4>First Name:</h4>
+        <input type="text" name="FirstName">
+
+        <h4>Last Name:</h4>
+        <input type="text" name="LastName">
+
+        <h4>Age:</h4>
+        <input type="number" name="Age">
+
+        <h4>Email:</h4>
+        <input type="email" name="Email">
+
+        <h4>Password:</h4>
+        <input type="password" name="Password">
+        <br><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
